@@ -100,7 +100,7 @@
     <section class="w-4/5 mx-auto">
       <div class="h-[800px] flex justify-center items-center">
         <div>
-          <img id="mainImage" src="./assets/preview-tshrt.png" alt="" />
+          <img id="mainImage" src="./assets/t-shirt-preview-1.png" alt="" />
         </div>
       </div>
 
@@ -112,40 +112,40 @@
           class="flex-1 h-44 shadow-lg border-1 border-gray-200 rounded-xl cursor-pointer"
         >
           <img
-            src="./assets/preview-tshrt.png"
+            src="./assets/t-shirt-preview-1.png"
             alt=""
             class="h-full w-full object-contain"
-            onclick="changeImage(this)"
+            onmouseover="changeImage(this)"
           />
         </div>
         <div
           class="flex-1 h-44 shadow-lg border-1 border-gray-200 rounded-xl cursor-pointer"
         >
           <img
-            src="./assets/preview-tshrt.png"
+            src="./assets/t-shirt-preview-2.png"
             alt=""
             class="h-full w-full object-contain"
-            onclick="changeImage(this)"
+            onmouseover="changeImage(this)"
           />
         </div>
         <div
           class="flex-1 h-44 shadow-lg border-1 border-gray-200 rounded-xl cursor-pointer"
         >
           <img
-            src="./assets/preview-tshrt.png"
+            src="./assets/t-shirt-preview-3.png"
             alt=""
             class="h-full w-full object-contain"
-            onclick="changeImage(this)"
+            onmouseover="changeImage(this)"
           />
         </div>
         <div
           class="flex-1 h-44 shadow-lg border-1 border-gray-200 rounded-xl cursor-pointer"
         >
           <img
-            src="./assets/preview-tshrt.png"
+            src="./assets/t-shirt-preview-4.png"
             alt=""
             class="h-full w-full object-contain"
-            onclick="changeImage(this)"
+            onmouseover="changeImage(this)"
           />
         </div>
         <button class="absolute right-0 z-10 p-2">
@@ -542,7 +542,8 @@
       });
 
       function changeImage(thumbnail) {
-        document.getElementById("mainImage").src = thumbnail.src;
+        const img = document.getElementById("mainImage");
+        img.src = thumbnail.src;
       }
     </script>
   </body>
