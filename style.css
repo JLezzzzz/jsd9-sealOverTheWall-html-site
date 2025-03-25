@@ -3,6 +3,8 @@
 @import "tailwindcss" source(none);
 @source "./public/*.{html,js}";
 @plugin "daisyui";
+@plugin "flowbite/plugin";
+
 
 *{
   font-family: 'Geist', sans-serif;
