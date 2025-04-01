@@ -90,22 +90,27 @@
         </div>
       </nav>
 
-      <div
-        class="bg-[url(./assets/vdo_hero.png)] h-[600px] flex justify-start items-center pl-10 bg-cover bg-center"
-      >
-        <div class="text-white">
-          <h2 class="text-5xl font-bold">Create Collect & Express</h2>
-          <p class="text-2xl mt-2">make your own design in just a few clicks</p>
-          <button class="text-xl bg-[#334DD8] px-8 py-2 rounded-full mt-4">
-            Let’s Create
-          </button>
+      <div class="relative h-[600px] flex justify-start items-center pl-10 bg-[url(./assets/vdo_hero.png)] bg-cover bg-center overflow-hidden">
+        <!-- Background Video -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline>
+            <source src="./assets/hero-section_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Content Overlay -->
+        <div class="relative z-10 text-white">
+            <h2 class="text-5xl font-bold">Create Collect & Express</h2>
+            <p class="text-2xl mt-2">Make your own design in just a few clicks</p>
+            <button class="text-xl bg-[#334DD8] px-8 py-2 rounded-full mt-4">
+                Let’s Create
+            </button>
         </div>
-      </div>
+    </div>
     </section>
 
     <section class="mt-20">
       <div
-        class="bg-[url(./assets/pic-hero.png)] h-[720px] flex justify-start items-center pl-10 bg-cover bg-center"
+        class="bg-[url(./assets/frame-320.png)] h-[720px] flex justify-start items-center pl-10 bg-cover bg-center"
       >
         <div class="text-white">
           <h2 class="text-5xl font-bold">Express to the world</h2>
@@ -167,7 +172,7 @@
           class="w-full h-full bg-[url(./assets/col-2.png)] bg-no-repeat bg-center"
         ></div>
         <div
-          class="w-full h-full bg-[url(./assets/col-3.png)] bg-cover bg-center"
+          class="w-full h-full bg-[url(./assets/work-with--heart-front.jpg)] bg-cover bg-center"
         ></div>
       </div>
     </section>
