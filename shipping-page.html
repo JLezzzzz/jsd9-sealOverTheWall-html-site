@@ -180,20 +180,37 @@
               <p class="text-[2rem] font-semibold">Select  a Shipping</p>
             </div>
             <div class="flex flex-row gap-[8px] text-xl mb-[8px] my-[20px] items-center">
-              <input type="checkbox" class="appearance-none w-[24px] h-[24px] rounded-full checked:bg-black">
+              <input type="checkbox" class="delivery-checkbox appearance-none w-[24px] h-[24px] rounded-full checked:bg-black">
               <p class="font-semibold">Standard Delivery</p>
             </div>
             <p class="text-[#A1A1AA] border-b-2 pb-[20px] text-wrap">Economy or standard shipping takes approximately 3-5 business days.
-            16 March - 21 March, 2025.</p>
+              16 March - 21 March, 2025.
+            </p>
+            
             <div class="flex flex-row gap-[8px] text-xl mb-[8px] my-[20px] items-center">
-              <input type="checkbox" class="appearance-none w-[24px] h-[24px] rounded-full checked:bg-black">
+              <input type="checkbox" class="delivery-checkbox appearance-none w-[24px] h-[24px] rounded-full checked:bg-black">
               <p class="font-semibold">Faster Delivery</p>
             </div>
             <p class="text-[#A1A1AA] border-b-2 pb-[20px] font-semibold text-wrap">1 day! <span class="font-normal">Order optimized based on customer location (for Bangkok orders only) 17 March, 2025.</span></p>
+            
             <div class="flex flex-row gap-[8px] text-xl mb-[8px] my-[20px] items-center">
-              <input type="checkbox" class="appearance-none w-[24px] h-[24px] rounded-full checked:bg-black">
+              <input type="checkbox" class="delivery-checkbox appearance-none w-[24px] h-[24px] rounded-full checked:bg-black">
               <p class="font-semibold">Cash on Delivery (COD)</p>
             </div>
+            
+            <script>
+              const checkboxes = document.querySelectorAll('.delivery-checkbox');
+              
+              checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                  checkboxes.forEach(box => {
+                    if (box !== this) {
+                      box.checked = false;  // Uncheck other checkboxes
+                    }
+                  });
+                });
+              });
+            </script>
             <p class="text-[#A1A1AA] border-b-2 pb-[20px] text-wrap">Payment for the goods must be made in full at the time of delivery before
               receiving the product. Of payment is not made at the delivery point, the item
               cannot be handed over to the recipient and will be returned to the sender.
