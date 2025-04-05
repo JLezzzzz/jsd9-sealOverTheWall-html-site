@@ -198,19 +198,7 @@
               <p class="font-semibold">Cash on Delivery (COD)</p>
             </div>
             
-            <script>
-              const checkboxes = document.querySelectorAll('.delivery-checkbox');
-              
-              checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', function() {
-                  checkboxes.forEach(box => {
-                    if (box !== this) {
-                      box.checked = false;  // Uncheck other checkboxes
-                    }
-                  });
-                });
-              });
-            </script>
+            
             <p class="text-[#A1A1AA] border-b-2 pb-[20px] text-wrap">Payment for the goods must be made in full at the time of delivery before
               receiving the product. Of payment is not made at the delivery point, the item
               cannot be handed over to the recipient and will be returned to the sender.
@@ -482,5 +470,19 @@
       function changeImage(thumbnail) {
         document.getElementById("mainImage").src = thumbnail.src;
       }
+
+      
+            const checkboxes = document.querySelectorAll('.delivery-checkbox');
+              
+              checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                  checkboxes.forEach(box => {
+                    if (box !== this) {
+                      box.checked = false;  // Uncheck other checkboxes
+                    }
+                  });
+                });
+              });
+            
     </script>
     </body>
